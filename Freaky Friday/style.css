@@ -1,71 +1,63 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-/* Starter min kode her, resten er for å resette nettsiders CSS */
 *{
     padding: 0%;
     margin: 0%;
     font-family: arial;
-    background-color: #f3f3f3;
+    text-decoration: none;
 }
-
 header{
-        height: 80px;
-        background-color:white ;
+    height: 80px;
+    background-color:white ;
 }
 
+header nav a{
+    color:#111;
+    font-family: 'Catamaran', sans-serif;
+}
+
+header nav ul{
+    box-sizing: content-box;
+
+}
+
+header nav li{
+    float: left;
+    display: inline-block;
+    line-height: 30px;
+    padding-left: 20px;
+    /* 80px-30px = 50px, 50px/2 = 25px */
+    margin-top: 25px;
+
+    list-style: none;
+}
+
+header nav .kontakt-meg{
+    width: fit-content;
+    line-height: 30px;
+    padding: 0 2px;
+    display: block;
+    float: right; 
+    box-sizing: border-box;
+    border: #111 solid 1px;
+
+    /* 80px-30px = 50px, 50px/2 = 25px, for å sentre knappen */
+    margin-top: 25px;
+    margin-right: 20px;
+
+}
+
+body{
+    background-color: #f3f3f3;
+    color:#111;
+}
 .wrapper{
     width: 100%;
     padding: 0px;
     margin: 0px;
 }
-
-
+.wrapper ul{
+    padding:0px 30px 20px 14%;
+    font-size: 12px;
+}
 
 .img-info{
     width: 100%;
@@ -73,24 +65,22 @@ header{
 
 .img-info h1{
     display: inline-flex;
-    padding: 30px 10px 10px 30px;
+    padding: 30px 10px 10px 10%;
     font-size: 35px;
-    color: #111;    
     line-height: 44px;
 }
 
 .img-info .info{
     list-style-type:none; 
     /* kode for å gjemme bulletpoints fra ul lista */
-    padding:0px 30px 20px;
+    padding:0 0 0 10%;
     font-family: arial;
     font-size: 14px;
-    color: #111;    
     line-height: 24px;
 }
 .img-me{
     display:none;
-    width: 26%;
+    width: 23%;
     margin:0px;
     margin:30px 10px 0px 0px;
     float: right;
@@ -98,48 +88,49 @@ header{
 }
 
 .img-info h2{
-    padding:0px 30px 20px;
+    padding:30px 0px 20px 10%;
     font-size: 20px;
-    color: #111;    
+    line-height: 24px;
+}
+h2::after{
+    content: " ";
+    display: block;
+    height: 2px;
+    width: 90%;
+    background-color: #111;
+}
+
+.img-info h3{
+    padding:0 0 0 10%;
+    font-size: 17px;
     line-height: 24px;
 }
 
 .img-info p{
-    padding:0px 30px 20px;
+    padding:0px 30px 2px 10%;
     font-size: 14px;
-    color: #111;    
     line-height: 24px;
 }
 
-.img-info h3{
-    padding:0px 30px 20px;
-    font-size: 18px;
-    color: #111;    
-    line-height: 24px;
+.utdanning h2{
+    padding-top:10px;
 }
 
-.arbeids-erfaring h2{
-    padding-bottom: 10px;
-}
-.arbeids-erfaring h3{
-    padding-bottom: 0px;
-}
-.arbeids-erfaring p{
-    padding-bottom: 0px;
-    padding-top: 0px;
-    font-size: 14px;
-    color: #111;    
-    line-height: 20px;
-}
-.arbeids-erfaring ul{
-    padding:0px 30px 20px 45px;
-    font-size: 12px;
-    color: #111;    
-}
-
+.wrapper .img-info .referanser{
+    line-height: 12px;
+    font-size: 11px;
+} 
 /* her i fra skal jeg gjøre siden respinsive */
 @media only screen and (min-width: 414px){
     .img-me{
         display: block;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .img-me{
+        display: block;
+        width: 20%;
+        margin-right: 5%;
     }
 }

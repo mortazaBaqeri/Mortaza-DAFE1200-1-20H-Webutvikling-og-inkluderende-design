@@ -1,6 +1,7 @@
 *{
     padding: 0%;
     margin: 0%;
+    font-family: arial;
 }
 
 .wrapper{
@@ -21,8 +22,7 @@ nav{
 
 .img-info h1{
     display: inline-flex;
-    padding: 30px 30px 10px;
-    font-family: arial;
+    padding: 30px 10px 10px 30px;
     font-size: 35px;
     color: #111;    
     line-height: 44px;
@@ -33,20 +33,20 @@ nav{
     /* kode for å gjemme bulletpoints fra ul lista */
     padding:0px 30px 20px;
     font-family: arial;
-    font-size: 16px;
+    font-size: 14px;
     color: #111;    
     line-height: 24px;
 }
 .img-me{
-    width: 20%;
+    width: 26%;
     margin:0px;
-    padding:0px;
+    margin:30px 10px 0px 0px;
     float: right;
+    border-radius:140px;
 }
 
 .img-info h2{
     padding:0px 30px 20px;
-    font-family: arial;
     font-size: 20px;
     color: #111;    
     line-height: 24px;
@@ -54,9 +54,35 @@ nav{
 
 .img-info p{
     padding:0px 30px 20px;
-    font-family: arial;
-    font-size: 16px;
+    font-size: 14px;
     color: #111;    
     line-height: 24px;
 }
+
+.img-info h3{
+    padding:0px 30px 20px;
+    font-size: 18px;
+    color: #111;    
+    line-height: 24px;
+}
+
+.arbeids-erfaring h2{
+    padding-bottom: 10px;
+}
+.arbeids-erfaring h3{
+    padding-bottom: 0px;
+}
+.arbeids-erfaring p{
+    padding-bottom: 0px;
+    padding-top: 0px;
+    font-size: 14px;
+    color: #111;    
+    line-height: 20px;
+}
+.arbeids-erfaring ul{
+    padding:0px 30px 20px 45px;
+    font-size: 12px;
+    color: #111;    
+}
+
 

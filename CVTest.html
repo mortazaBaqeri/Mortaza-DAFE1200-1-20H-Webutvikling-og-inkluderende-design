@@ -4,23 +4,19 @@
     <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/css2?family=Catamaran&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--kode for å gjøre siden responsive-->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
     <title>CV</title>
 </head>
-<body>
+<body id="kontakt-meg">
     <header>
         <nav> <!--navigaiton bar-->  
             <h1 class="CV-logo">CV</h1>
-            <ul>
-                <li> <a href="#"> Hjem </a></li>
-                <li> <a href="#"> Tilbake meldig </a></li>
-            </ul> 
-                <input type="checkbox" id="checkbox">
-                <label for="checkbox" class ="label"> Kontakt meg</label>
-             <a href="#" class="kontakt-meg"> Kontakt meg </a>
+             <a href="#kontakt-meg" class="kontakt-meg" > Kontakt meg </a>
+             <!-- satte iden til body = "kontakt-meg" for at den skal scolle helt opp i siden når knappen trykkes, der ligger kontakt informasjon  -->
         </nav>
     </header>
     <main>
+        <div ></div>
         <div class="wrapper">
             <article class="img-info">
                 <!-- img må komme først for at float setningen skal funke -->
@@ -96,11 +92,13 @@
             <h2>Referanser</h2>
             <p class="referanser">Opgis ved førespørsel, men mine venner, kolleger og ledre vil beskrive meg som x, x og x. De vil også si at jeg er en som alltid tar fått på arbeidsoppgaver med stor entuasiasme, og at jeg ikke gir opp før jobben er gjort.</p>
             </article>
+        </div>
         </main>
+
         <footer>
             <p>Laget av Mortaza Baqeri  </p>
         </footer>
-    </div>
+
     <!--
         <div class="popup">
             <div class="blanket"></div>

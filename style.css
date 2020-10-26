@@ -32,7 +32,7 @@ header nav a{
 
 header nav li{
     float: left;
-    display: inline-block;
+    display: block;
     line-height: 30px;
     padding-left: 20px;
     /* 80px-30px = 50px, 50px/2 = 25px */
@@ -58,6 +58,7 @@ body{
     background-color: white;
     color:#111;
 }
+p{font-size: 14px;}
 .wrapper{
     width: 90%;
     padding: 0px;
@@ -71,14 +72,12 @@ body{
 .img-info{
     width: 100%;
 }
-
 .img-info h1{
     display: inline-block;
     padding: 30px 0;
     font-size: 35px;
     line-height: 44px;
 }
-
 .img-info .info{
     list-style-type:none; 
     /* kode for å gjemme bulletpoints fra ul lista */
@@ -87,6 +86,7 @@ body{
     font-size: 14px;
     line-height: 24px;
 }
+
 .img-me{
     display:none;
     width: 100px;
@@ -127,19 +127,79 @@ h2::after{
 .wrapper .img-info .referanser{
     font-size: 12px;
 } 
-
+/* ---------------------------------Footer--------------------------------------- */
 footer{
+    padding-top: 20px;
     margin-top: 50px;
-    height: 50px;
     width: 100%;
+    height: fit-content;
     background-color: #111; 
     color: #f1f1f1;
+    box-sizing: border-box;
     text-align: center;
 }
 footer p {
-        line-height: 24px;
+    line-height: 24px;
 }
-p{    font-size: 14px;}
+.container{
+    margin: 0 auto;
+    width: 90%;
+    background-color: #111;
+    text-align: center;
+}
+.container h1{
+    font-size: 22px;
+    font-weight: 100;
+    color:white;
+    font-family: 'Catamaran', sans-serif;
+}
+.container input[type=text]{
+    width: 100%;
+    border: 2px solid #aaa;
+    border-radius: 4px;
+    margin: 8px 0;
+    outline: none;
+    padding: 4px;
+    box-sizing: border-box;
+    transition: .3s;
+}
+.container input[type=text]:focus{
+    border-color: white;
+    box-shadow:0 0 8px 0 white; 
+}
+.container textarea{
+    /* float:left;
+    clear: right; */
+    width: 100%;
+    border: 2px solid #aaa;
+    border-radius: 4px;
+    margin: 0 0 8px 0; 
+    outline: none;
+    padding: 4px;
+    box-sizing: border-box;
+    transition: .3s;
+}
+.container  textarea:focus{
+    border-color: white;
+    box-shadow:0 0 8px 0 white; 
+}
+.container button{
+    height: 30px;
+    width: 100px;
+    border: darkgray solid 2px;
+    border-radius: 4px;
+    outline: none;
+    margin: 0 auto;
+    transition: .3s;
+    cursor: pointer;
+}
+.container button:hover{
+    border: solid 2px #111;
+}
+
+/* ---------------------------------End of Footer--------------------------------------- */
+
+
 
 /* her i fra skal jeg gjøre siden respinsive */
 @media only screen and (min-width: 414px){
@@ -186,10 +246,6 @@ p{    font-size: 14px;}
     } 
     p{font-size: 20px;}
 
-    footer{
-        height: 75px;
-    }
-
 }
 @media only screen and (min-width: 1000px){
 
@@ -208,6 +264,9 @@ p{    font-size: 14px;}
         margin-top:calc((150px - 42px) / 2)
     }
     .wrapper{
+        width: 960px;
+    }
+    .container{
         width: 960px;
     }
     .img-info h1{
